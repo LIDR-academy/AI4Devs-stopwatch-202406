@@ -1,0 +1,81 @@
+.stopwatch-container {
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.back-button {
+  margin-bottom: 20px;
+}
+
+.clock {
+  font-size: 10vw;
+  text-align: center;
+  line-height: 0.6;
+}
+
+.milliseconds-row {
+  font-size: 3vw;
+  align-self: flex-end;
+}
+
+.action-zone {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.action-zone > button {
+  width: 30vw;
+  height: 10vw;
+  margin: 0 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.action-zone > button > i {
+  font-size: 3vw;
+}
+
+.btn-stop {
+  background-color: lightcoral;
+}
+
+.btn-lapse {
+  background-color: lightblue;
+}
+
+.btn-play {
+  background-color: lightgreen;
+}
+
+.lapses {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  font-size: 3vw;
+  margin: 0 auto;
+}
+
+.lapses li {
+  animation: fadeInDown 0.5s;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

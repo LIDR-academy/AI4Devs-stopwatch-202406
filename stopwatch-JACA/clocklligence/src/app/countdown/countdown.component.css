@@ -1,0 +1,112 @@
+.countdown-container {
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.back-button {
+  margin-bottom: 20px;
+}
+
+.clock {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 10vw;
+  margin: 0 auto;
+}
+
+.countdown-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1vw;
+}
+
+.arrow {
+  font-size: 3vw; /* Font size for arrows */
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  background: none;
+}
+
+.colon {
+  font-size: 10vw;
+  align-self: center; /* Align colons with the digits */
+}
+
+.milliseconds {
+  font-size: 2vw;
+  align-self: flex-end;
+}
+
+.milliseconds .digit {
+  font-size: 2vw;
+}
+
+.action-zone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.numeric-pad {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2vw 0;
+}
+
+.numeric-pad button {
+  width: 5vw;
+  height: 5vw;
+  margin: 0.5vw;
+  font-size: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.control-buttons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.control-button {
+  width: 30vw;
+  height: 10vw;
+  margin: 0 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.control-button > i {
+font-size: 3vw; /* Icon size */
+}
+
+.set-button {
+  background-color: lightblue;
+}
+
+.clear-button {
+  background-color: lightcoral;
+}
+
+.blinking {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}

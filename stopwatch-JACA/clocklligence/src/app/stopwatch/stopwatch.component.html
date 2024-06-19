@@ -1,0 +1,30 @@
+<div class="stopwatch-container">
+  <div class="page-header">
+    <button nz-button nzType="default" class="back-button" routerLink="/">
+      <i nz-icon nzType="arrow-left" nzTheme="outline"></i>
+    </button>
+    <button nz-button nzType="default" class="feature-button" (click)="toggleFullScreen()">
+      🖥️ Go Full Screen 🖥️
+    </button>
+  </div>
+  <div class="clock">
+    {{ hours }}:{{ minutes }}:{{ seconds }}
+  </div>
+  <div class="milliseconds-row">
+    .{{milliseconds}}
+  </div>
+  <div class="action-zone">
+    <button nz-button class="btn-play action-zone-button" (click)="toggleStartPause()">
+      <i nz-icon [nzType]="isRunning ? 'pause' : 'caret-right'" nzTheme="outline"></i>
+    </button>
+    <button nz-button class="btn-lapse action-zone-button" (click)="lapse()">
+      <i nz-icon nzType="reload" nzTheme="outline"></i>
+    </button>
+    <button nz-button class="btn-stop action-zone-button" (click)="stop()">
+      <i nz-icon nzType="stop" nzTheme="outline"></i>
+    </button>
+  </div>
+  <ul class="lapses">
+    <li *ngFor="let lapse of lapses">{{ lapse }}</li>
+  </ul>
+</div>

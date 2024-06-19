@@ -1,0 +1,67 @@
+<div class="countdown-container">
+  <div class="page-header">
+    <button nz-button nzType="default" class="back-button" routerLink="/">
+      <i nz-icon nzType="arrow-left" nzTheme="outline"></i>
+    </button>
+    <button nz-button nzType="default" class="feature-button" (click)="toggleFullScreen()">
+      🖥️ Go Full Screen 🖥️
+    </button>
+  </div>
+  <div class="clock">
+    <div class="countdown-unit">
+      <button class="arrow arrow-up"><i nz-icon nzType="up" nzTheme="outline" nzSize="small" nzBlock="true" (click)="increment('hoursTens')"></i></button>
+      <div class="digit">{{ hoursTens }}</div>
+      <button class="arrow arrow-down"><i nz-icon nzType="down" nzTheme="outline" nzSize="small" nzBlock="true" (click)="decrement('hoursTens')"></i></button>
+    </div>
+    <div class="countdown-unit">
+      <button class="arrow arrow-up"><i nz-icon nzType="up" nzTheme="outline" nzSize="small" nzBlock="true" (click)="increment('hoursOnes')"></i></button>
+      <div class="digit">{{ hoursOnes }}</div>
+      <button class="arrow arrow-down"><i nz-icon nzType="down" nzTheme="outline" nzSize="small" nzBlock="true" (click)="decrement('hoursOnes')"></i></button>
+    </div>
+    :
+    <div class="countdown-unit">
+      <button class="arrow arrow-up"><i nz-icon nzType="up" nzTheme="outline" nzSize="small" nzBlock="true" (click)="increment('minutesTens')"></i></button>
+      <div class="digit">{{ minutesTens }}</div>
+      <button class="arrow arrow-down"><i nz-icon nzType="down" nzTheme="outline" nzSize="small" nzBlock="true" (click)="decrement('minutesTens')"></i></button>
+    </div>
+    <div class="countdown-unit">
+      <button class="arrow arrow-up"><i nz-icon nzType="up" nzTheme="outline" nzSize="small" nzBlock="true" (click)="increment('minutesOnes')"></i></button>
+      <div class="digit">{{ minutesOnes }}</div>
+      <button class="arrow arrow-down"><i nz-icon nzType="down" nzTheme="outline" nzSize="small" nzBlock="true" (click)="decrement('minutesOnes')"></i></button>
+    </div>
+    :
+    <div class="countdown-unit">
+      <button class="arrow arrow-up"><i nz-icon nzType="up" nzTheme="outline" nzSize="small" nzBlock="true" (click)="increment('secondsTens')"></i></button>
+      <div class="digit">{{ secondsTens }}</div>
+      <button class="arrow arrow-down"><i nz-icon nzType="down" nzTheme="outline" nzSize="small" nzBlock="true" (click)="decrement('secondsTens')"></i></button>
+    </div>
+    <div class="countdown-unit">
+      <button class="arrow arrow-up"><i nz-icon nzType="up" nzTheme="outline" nzSize="small" nzBlock="true" (click)="increment('secondsOnes')"></i></button>
+      <div class="digit">{{ secondsOnes }}</div>
+      <button class="arrow arrow-down"><i nz-icon nzType="down" nzTheme="outline" nzSize="small" nzBlock="true" (click)="decrement('secondsOnes')"></i></button>
+    </div>
+  </div>
+  <div class="milliseconds">
+    <span class="point">.</span>
+    <span class="digit milliseconds">{{ millisecondsHundreds }}</span>
+    <span class="digit milliseconds">{{ millisecondsTens }}</span>
+    <span class="digit milliseconds">{{ millisecondsOnes }}</span>
+  </div>
+  <div class="action-zone">
+    <div class="numeric-pad">
+      <button nz-button *ngFor="let number of numbers" class="numeric-button" (click)="appendDigit(number)">
+        {{ number }}
+      </button>
+    </div>
+    <div class="control-buttons">
+      <button class="control-button set-button" (click)="setCountdown()">
+        <i nz-icon nzType="step-forward" nzTheme="outline" *ngIf="!isCountingDown && !isPaused"></i>
+        <i nz-icon nzType="caret-right" nzTheme="outline" *ngIf="isPaused"></i>
+        <i nz-icon nzType="pause" nzTheme="outline" *ngIf="isCountingDown"></i>
+      </button>
+      <button nz-button class="control-button clear-button" (click)="onStopClick()">
+        <i nz-icon nzType="stop" nzTheme="outline"></i>
+      </button>
+    </div>
+  </div>
+</div>
