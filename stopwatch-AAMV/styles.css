@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+#main-container {
+    text-align: center;
+    max-width: 800px;
+}
+
+.hidden {
+    display: none;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-btn, .control-btn, .secondary-btn {
+    display: inline-block;
+    padding: 15px;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.main-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.control-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.secondary-btn {
+    background-color: #ffc107;
+    color: black;
+}
+
+.control-btn:hover, .main-btn:hover, .secondary-btn:hover {
+    opacity: 0.8;
+}
+
+#stopwatch-display, #countdown-display {
+    font-size: 48px;
+    margin: 20px 0;
+    color: #333;
+}
+
+input {
+    width: 60px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
