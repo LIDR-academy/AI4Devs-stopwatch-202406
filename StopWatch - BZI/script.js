@@ -44,4 +44,3 @@ function updateTimer() {
                         (minutes < 10 ? "0" + minutes : minutes) + ":" +
                         (seconds < 10 ? "0" + seconds : seconds);
 }
-k
