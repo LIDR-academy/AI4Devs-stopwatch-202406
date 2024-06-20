@@ -1,0 +1,22 @@
+.time-input {
+    width: 60px;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.btn-group .btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+}
+
+#stopwatch-display,
+#timer-display {
+    font-size: 3rem;
+}
+
+#stopwatch-display small,
+#timer-display small {
+    font-size: 1.5rem;
+}
