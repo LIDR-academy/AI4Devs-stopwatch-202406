@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+<!-- Menú de inicio -->
+<div id="menu" class="text-center">
+    <h1 class="text-4xl mb-8">StopWatch</h1>
+    <div class="flex justify-center space-x-8 mb-8">
+        <button id="cronometroBtn" class="btn btn-cronometro">⏱️ Cronómetro</button>
+        <button id="alarmaBtn" class="btn btn-alarma">⏰ Alarma</button>
+    </div>
+</div>
+
+<!-- Cronómetro -->
+<div id="cronometro" class="hidden text-center">
+    <h2 class="text-3xl mb-4">Cronómetro</h2>
+    <div id="cronometroDisplay" class="text-5xl mb-4">00:00:00.000</div>
+    <div class="flex justify-center space-x-4 mb-8">
+        <button id="startStopBtn" class="btn btn-cronometro-start">Iniciar</button>
+        <button id="resetBtn" class="btn btn-cronometro-reset">Reiniciar</button>
+        <button id="backToMenu" class="btn btn-back">← Volver al Menú</button>
+    </div>
+</div>
+
+<!-- Alarma -->
+<div id="alarma" class="hidden text-center">
+    <h2 class="text-3xl mb-4">Alarma</h2>
+    <div id="alarmaDisplay" class="text-5xl mb-4">00:00:00.000</div>
+    <div id="timeInput" class="mb-4">
+        <input id="hoursInput" type="number" min="0" max="23" placeholder="Horas" class="input-time">
+        <input id="minutesInput" type="number" min="0" max="59" placeholder="Minutos" class="input-time">
+        <input id="secondsInput" type="number" min="0" max="59" placeholder="Segundos" class="input-time">
+        <button id="setAlarmBtn" class="btn btn-alarma-set">Configurar Alarma</button>
+    </div>
+    <div id="alarmControls" class="hidden">
+        <button id="startPauseAlarm" class="btn btn-alarma-start">Iniciar</button>
+        <button id="resetAlarmBtn" class="btn btn-alarma-reset">Reiniciar</button>
+        <button id="backToMenuAlarm" class="btn btn-back">← Volver al Menú</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
