@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Countdown and Stopwatch">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Countdown and Stopwatch</title>
+</head>
+<body>
+    <header>
+        <h1>Countdown and Stopwatch</h1>
+    </header>
+    <main>
+        <div id="stopwatch" class="timer">
+            <h2>Stopwatch</h2>
+            <div class="time">
+                <span id="sw-hours">00</span>:<span id="sw-minutes">00</span>:<span id="sw-seconds">00</span>
+                <div id="sw-milliseconds">000</div>
+            </div>
+            <div class="controls">
+                <button id="sw-start">Start</button>
+                <button id="sw-pause">Pause</button>
+                <button id="sw-clear">Clear</button>
+            </div>
+        </div>
+        
+        <div id="countdown" class="timer">
+            <h2>Countdown</h2>
+            <div class="time">
+                <span id="cd-hours">00</span>:<span id="cd-minutes">00</span>:<span id="cd-seconds">00</span>
+                <div id="cd-milliseconds">000</div>
+            </div>
+            <div class="controls">
+                <input type="number" id="cd-hours-input" placeholder="Hours" min="0" />
+                <input type="number" id="cd-minutes-input" placeholder="Minutes" min="0" />
+                <input type="number" id="cd-seconds-input" placeholder="Seconds" min="0" />
+                <button id="cd-start">Start</button>
+                <button id="cd-pause">Pause</button>
+                <button id="cd-clear">Clear</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
