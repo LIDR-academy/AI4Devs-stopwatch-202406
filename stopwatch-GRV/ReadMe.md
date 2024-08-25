@@ -33,4 +33,4 @@ The application uses the Roboto font and has a dark color palette for a sleek lo
 
 Developer comments!
 
-Free ChatGPT version was used. It has it's little details and accuracy.
+Free ChatGPT version was used. It has it's little details and accuracy but it catched very well a mispelling included in the second propmt, App instead of Add, nice catch ChatGPT.
