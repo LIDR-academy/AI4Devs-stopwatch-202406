@@ -1,4 +1,22 @@
-# Stopwatch
+# Stopwatch EN
+
+Use what you’ve learned about prompt engineering to create a stopwatch and countdown.
+
+Reference: https://www.online-stopwatch.com/ (see res/stopwatch.png for design reference)
+
+Do it using the seed index.html + script.js
+
+Use a chatbot, like ChatGPT or Gemini, not a code assistant in an IDE like Copilot.
+
+Tip: if it allows image analysis, you can upload it to easily obtain a design similar to the reference.
+
+To submit the exercise, make a pull request that includes not only the generated code but also, crucially, the prompt used in the file prompts.md. Also, add the prompt in the comment.
+
+To submit, make a pull request that includes a folder copied from the template, with the name stopwatch-initials (e.g., stopwatch-ARM). It should include not only the generated code but also, crucially, the prompt used and the chatbot used in prompts.md. If you’ve used more than one prompt until reaching a suitable solution, add them all in order. Also, include the final prompt in the pull request comment.
+
+Good luck!
+
+# Stopwatch ES
 
 Utiliza lo aprendido sobre prompt engineering para crear un **cronómetro y cuenta atrás**. 
 
