@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronómetro y Temporizador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="selection-screen">
+            <h1>Selecciona una opción</h1>
+            <button id="chronometer-btn">Cronómetro</button>
+            <button id="countdown-btn">Cuenta Regresiva</button>
+        </div>
+        
+        <div id="chronometer-screen" class="hidden">
+            <h2>Cronómetro</h2>
+            <div id="chronometer-display">00:00:00.000</div>
+            <button id="chronometer-start" class="green-btn">Start</button>
+            <button id="chronometer-clear" class="red-btn">Clear</button>
+            <button class="back-btn">Atrás</button>
+        </div>
+        
+        <div id="countdown-screen" class="hidden">
+            <h2>Cuenta Regresiva</h2>
+            <div id="countdown-display">00:00:00.000</div>
+            <div id="countdown-number-pad">
+                <button class="number-btn">1</button>
+                <button class="number-btn">2</button>
+                <button class="number-btn">3</button>
+                <button class="number-btn">4</button>
+                <button class="number-btn">5</button>
+                <button class="number-btn">6</button>
+                <button class="number-btn">7</button>
+                <button class="number-btn">8</button>
+                <button class="number-btn">9</button>
+                <button class="number-btn">0</button>
+            </div>
+            <div id="countdown-controls">
+                <button id="countdown-clear" class="red-btn">Clear</button>
+                <button id="countdown-set" class="blue-btn">Set</button>
+                <button id="countdown-start" class="green-btn hidden">Start</button>
+            </div>
+            <button class="back-btn">Atrás</button>
+        </div>
+    </div>
+    <button id="theme-toggle">Cambiar tema</button>
+    <script src="script.js"></script>
+</body>
+</html>
