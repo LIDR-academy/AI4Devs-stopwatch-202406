@@ -1,0 +1,63 @@
+body {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: #333333;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+h1 {
+    color: yellow;
+}
+
+.timer {
+    background-color: #444444;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.time {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#sw-milliseconds,
+#cd-milliseconds {
+    font-size: 0.5em; /* Adjust the font size as needed */
+}
+
+.controls button {
+    background-color: #666666;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.controls button:hover {
+    background-color: #777777;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
