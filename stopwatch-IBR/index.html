@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Tool</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="flex flex-col items-center justify-center h-screen bg-gray-100">
+<!-- Main Menu -->
+<div id="main-menu" class="text-center">
+    <button id="stopwatchBtn" class="px-4 py-2 mx-2 font-bold text-white bg-green-500 rounded hover:bg-green-700">Stopwatch</button>
+    <button id="countdownBtn" class="px-4 py-2 mx-2 font-bold text-white bg-red-500 rounded hover:bg-red-700">Countdown</button>
+</div>
+<!-- Stopwatch View -->
+<div id="stopwatchView" class="hidden text-center">
+    <div class="mb-4 text-5xl font-semibold p-4 bg-white border rounded shadow-lg" id="stopwatchDisplay">00:00:00</div>
+    <div class="flex justify-center space-x-4 mb-4">
+        <button id="startStopwatchBtn" class="px-4 py-2 font-bold text-white bg-green-500 rounded hover:bg-green-700">Start</button>
+        <button id="clearStopwatchBtn" class="px-4 py-2 font-bold text-white bg-red-500 rounded hover:bg-red-700">Clear</button>
+    </div>
+    <div class="w-full py-2 text-center bg-blue-500">
+        <button id="backToMenuFromStopwatch" class="px-4 py-2 font-bold text-white bg-green-500 rounded hover:bg-green-700">Back</button>
+    </div>
+</div>
+<!-- Countdown View -->
+<div id="countdownView" class="hidden text-center">
+    <div class="mb-4 text-5xl font-semibold p-4 bg-white border rounded shadow-lg" id="countdownDisplay">00:00:00</div>
+    <div class="grid grid-cols-3 gap-2 mb-4">
+        <button class="px-4 py-2 font-bold text-white bg-green-500 rounded hover:bg-green-700" onclick="appendNumber(1)">1</button>
+        <button class="px-4 py-2 font-bold text-white bg-green-500 rounded hover:bg-green-700" onclick="appendNumber(2)">2</button>
+        <button class="px-4 py-2 font-bold text-white bg-green-500 rounded hover:bg-green-700" onclick="appendNumber(3)">3</button>
+        <button class="px-4 py-2 font-bold text-white bg-green-500 rounded hover:bg-green-700" onclick="appendNumber(4)">4</button>
+        <button class="px-4 py-2 font-bold text-white bg-green-500 rounded hover:bg-green-700" onclick="appendNumber(5)">5</button>
+        <button class="px-4 py-2 font-bold text-white bg-green-500 rounded hover:bg-green-700" onclick="appendNumber(6)">6</button>
+        <button class="px-4 py-2 font-bold text-white bg-green-500 rounded hover:bg-green-700" onclick="appendNumber(7)">7</button>
+        <button class="px-4 py-2 font-bold text-white bg-green-500 rounded hover:bg-green-700" onclick="appendNumber(8)">8</button>
+        <button class="px-4 py-2 font-bold text-white bg-green-500 rounded hover:bg-green-700" onclick="appendNumber(9)">9</button>
+        <button class="px-4 py-2 font-bold text-white bg-green-500 rounded hover:bg-green-700" onclick="appendNumber(0)">0</button>
+        <button id="setCountdownBtn" class="col-span-3 px-4 py-2 font-bold text-white bg-green-500 rounded hover:bg-green-700">Set</button>
+        <button id="clearCountdownBtn" class="col-span-3 px-4 py-2 font-bold text-white bg-red-500 rounded hover:bg-red-700">Clear</button>
+    </div>
+    <div class="w-full py-2 text-center bg-blue-500">
+        <button id="backToMenuFromCountdown" class="px-4 py-2 font-bold text-white bg-green-500 rounded hover:bg-green-700">Back</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
