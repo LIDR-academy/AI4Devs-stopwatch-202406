@@ -1,0 +1,50 @@
+/* Estilos adicionales con Tailwind CSS */
+.input-time {
+    width: 3rem;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    text-align: center;
+}
+
+.btn {
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    font-size: 1.25rem;
+}
+
+.btn-cronometro {
+    background-color: #4CAF50; /* Verde */
+}
+
+.btn-cronometro-start {
+    background-color: #4CAF50; /* Verde */
+}
+
+.btn-cronometro-reset {
+    background-color: #f44336; /* Rojo */
+}
+
+.btn-alarma {
+    background-color: #FFC107; /* Amarillo */
+}
+
+.btn-alarma-set {
+    background-color: #FFC107; /* Amarillo */
+}
+
+.btn-alarma-start {
+    background-color: #FFC107; /* Amarillo */
+}
+
+.btn-alarma-reset {
+    background-color: #f44336; /* Rojo */
+}
+
+.btn-back {
+    background-color: #2196F3; /* Azul */
+}
+
+/* Ocultar el scroll lateral */
+body {
+    overflow-x: hidden;
+}
