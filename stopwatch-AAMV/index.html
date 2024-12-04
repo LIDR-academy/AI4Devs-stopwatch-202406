@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch and Countdown</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="main-container">
+        <div id="home-screen">
+            <div class="option">
+                <img src="path_to_stopwatch_image.png" alt="Stopwatch">
+                <button id="stopwatch-btn" class="main-btn">Stopwatch</button>
+            </div>
+            <div class="option">
+                <img src="path_to_countdown_image.png" alt="Countdown">
+                <button id="countdown-btn" class="main-btn">Countdown</button>
+            </div>
+        </div>
+        <div id="stopwatch-screen" class="hidden">
+            <div id="stopwatch-display">00:00:00:000</div>
+            <button id="start-stopwatch" class="control-btn">Start</button>
+            <button id="clear-stopwatch" class="control-btn">Clear</button>
+            <button id="back-stopwatch" class="control-btn">Back</button>
+        </div>
+        <div id="countdown-screen" class="hidden">
+            <div id="countdown-display">00:00:00:000</div>
+            <div id="countdown-setup" class="hidden">
+                <input type="number" id="hours" placeholder="HH">
+                <input type="number" id="minutes" placeholder="MM">
+                <input type="number" id="seconds" placeholder="SS">
+                <button id="set-countdown" class="control-btn">Set</button>
+            </div>
+            <button id="start-countdown" class="control-btn hidden">Start</button>
+            <button id="clear-countdown" class="control-btn">Clear</button>
+            <button id="back-countdown" class="control-btn">Back</button>
+        </div>
+    </div>
+    <button id="add-to-page" class="secondary-btn">Add to My Page</button>
+    <button id="go-fullscreen" class="secondary-btn">Go Fullscreen</button>
+    <script src="script.js"></script>
+</body>
+</html>
