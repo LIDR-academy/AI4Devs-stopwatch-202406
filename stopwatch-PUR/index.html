@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Stopwatch</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container text-center mt-5">
+            <h1>Stopwatch</h1>
+            <div id="menu" class="mt-4">
+                <button class="btn btn-primary" id="show-stopwatch">Cronómetro</button>
+                <button class="btn btn-primary" id="show-timer">Cuenta Atrás</button>
+            </div>
+
+            <div id="stopwatch" class="d-none">
+                <h2 id="stopwatch-display">00:00:00 <small>000</small></h2>
+                <button class="btn btn-success" id="start-stopwatch">Iniciar</button>
+                <button class="btn btn-warning" id="reset-stopwatch">Reiniciar</button>
+                <button class="btn btn-danger" id="back-to-menu-stopwatch">Volver</button>
+            </div>
+
+            <div id="timer" class="d-none">
+                <div id="timer-inputs">
+                    <input type="text" class="time-input" id="hours" value="00" readonly />
+                    <input type="text" class="time-input" id="minutes" value="00" readonly />
+                    <input type="text" class="time-input" id="seconds" value="00" readonly />
+                </div>
+                <div class="btn-group mt-2">
+                    <button class="btn btn-secondary number-btn">0</button>
+                    <button class="btn btn-secondary number-btn">1</button>
+                    <button class="btn btn-secondary number-btn">2</button>
+                    <button class="btn btn-secondary number-btn">3</button>
+                    <button class="btn btn-secondary number-btn">4</button>
+                    <button class="btn btn-secondary number-btn">5</button>
+                    <button class="btn btn-secondary number-btn">6</button>
+                    <button class="btn btn-secondary number-btn">7</button>
+                    <button class="btn btn-secondary number-btn">8</button>
+                    <button class="btn btn-secondary number-btn">9</button>
+                </div>
+                <div class="mt-2">
+                    <button class="btn btn-warning" id="clear-inputs">Limpiar</button>
+                    <button class="btn btn-primary" id="set-timer">Set</button>
+                    <button class="btn btn-danger" id="back-to-menu-timer">Volver</button>
+                </div>
+                <div id="timer-set" class="d-none">
+                    <h2 id="timer-display">00:00:00 <small>000</small></h2>
+                    <button class="btn btn-success" id="start-timer">Iniciar</button>
+                    <button class="btn btn-warning" id="reset-timer">Reiniciar</button>
+                    <button class="btn btn-danger" id="back-to-inputs">Volver</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
